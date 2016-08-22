@@ -6776,10 +6776,10 @@ h2 .release-date {
     position: relative;
     padding: 50px 0 190px;
     height: 590px;
-    background-image: url(//github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/hero-6f5ca4d6a52b063697c029b5e2654ff1.svg), url(//github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/hero-tile-60e4804d894eddd6f26dd04402365ad2.png);
+    background: url(img/Mountain.jpg), linear-gradient(to right, #292b40, #59566b);
     background-position: 50% 0;
     background-size: auto, auto 100%;
-    background-repeat-y: no-repeat, repeat
+    background-repeat: no-repeat
 }
 
 header.header {
