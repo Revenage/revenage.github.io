@@ -4820,11 +4820,16 @@ hr {
 
 .columns .column:last-child {
     padding-left: 20px;
-    padding-right: 0
+    padding-right: 0;
 }
 
 .columns .left, .columns .right {
-    width: 50%
+    width: 50%;
+}
+
+.columns .left {
+    width: 50%;
+    padding: 95px 0;
 }
 
 .columns .sidebar {
@@ -6779,7 +6784,7 @@ h2 .release-date {
 
 header.header {
     padding: 10px 0;
-    background-color: none
+    background-color: none;
 }
 
 .highlight {
@@ -6869,13 +6874,18 @@ header.header {
 
 .video {
     margin: 0 auto;
-    width: 300px;
-    height: 300px;
-    background: url(//github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/video-bg-9e8e11bb819e730b5564bd5471accccc.svg) no-repeat
+    width: 340px;
+    height: 340px;
+    background: url(img/circle.svg) no-repeat center center;
+    background-size: 90%;
+    -webkit-animation: spin 120s infinite linear;
+    -moz-animation-animation: spin 120s infinite linear;
+    -ms-animation: spin 120s infinite linear;
+    animation: spin 120s infinite linear;
 }
 
 .video-button {
-    margin: 50px auto;
+    margin: 70px auto;
     width: 200px;
     height: 200px;
     padding: 0;
@@ -6887,7 +6897,11 @@ header.header {
     background-position: center center;
     background-repeat: no-repeat;
     outline: none;
-    cursor: pointer
+    cursor: pointer;
+    -webkit-animation: spin-back 120s infinite linear;
+    -moz-animation-animation: spin-back 120s infinite linear;
+    -ms-animation: spin-back 120s infinite linear;
+    animation: spin-back 120s infinite linear;
 }
 
 .video-button:hover {
@@ -6946,7 +6960,7 @@ header.header {
 
 .welcome-beta .call-to-action {
     padding-top: 100px;
-    background-image: url(//github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/hero-beta-504f56347fd76080092f8f3c2661b06c.svg), url(//github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/hero-tile-beta-ec2b6603a2b363ab0ab0211b9a6eb31b.png)
+    background-image: url(img/land.svg), url(img/sky.png)
 }
 
 .welcome-beta .download-button {
@@ -7196,4 +7210,30 @@ header.header {
 .performance-bar li:hover {
     opacity: 1;
     cursor: default
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@-moz-keyframes spin-back {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(-360deg); }
+}
+@-webkit-keyframes spin-back {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(-360deg); }
+}
+@keyframes spin-back {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(-360deg);}
 }
