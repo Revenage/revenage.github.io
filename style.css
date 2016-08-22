@@ -4672,7 +4672,8 @@ hr {
 
 .header h1 {
     margin: 0;
-    display: inline-block
+    display: inline-block;
+    color: #E3E3E3;
 }
 
 .header .logo {
@@ -6437,7 +6438,7 @@ body.menu-active .modal-backdrop {
     line-height: 1.4;
     font-size: 30px;
     font-weight: 300;
-    color: #849189
+    color: #E3E3E3;
 }
 
 .call-to-action .subtitle {
