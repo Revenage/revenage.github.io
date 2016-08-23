@@ -6548,19 +6548,23 @@ body.menu-active .modal-backdrop {
     display: block;
     height: 390px;
     width: 860px;
-    background-image: url(//github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/screenshot-main-80d8c9841da6ed11c9d87f31136a4ca9.png);
+    background-image: url(img/screenshot.png);
     border-radius: 5px;
     box-shadow: 0 14px 12px -10px rgba(0, 8, 26, 0.32);
-    margin-top: 60px
+    margin-top: 60px;
+    background-size: 98%;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
     .screenshot-main {
-        background-image: url(//github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/screenshot-main@2x-f5f56d18fa8896b3d987d24fc903d03f.png);
+        background-image: url(img/screenshot.png);
         -webkit-background-size: 860px 390px;
         -moz-background-size: 860px 390px;
         -o-background-size: 860px 390px;
-        background-size: 860px 390px
+        background-size: 860px 390px;
+        background-repeat: no-repeat;
     }
 }
 
