@@ -6806,6 +6806,7 @@ header.header {
 }
 
 .one-o-feature {
+    vertical-align: middle;
     width: 32%;
     padding-left: 26px;
     text-align: center;
